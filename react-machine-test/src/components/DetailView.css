@@ -1,0 +1,35 @@
+.detail-container {
+    padding: 20px;
+    max-width: 800px;
+    margin: auto;
+  }
+  
+  .back-button {
+    padding: 8px 16px;
+    background-color: #2196f3;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-bottom: 20px;
+  }
+  
+  .back-button:hover {
+    background-color: #1976d2;
+  }
+  
+  .post-detail {
+    background: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .post-detail h2 {
+    margin-top: 0;
+  }
+  
+  .post-detail p {
+    line-height: 1.6;
+  }
+  
