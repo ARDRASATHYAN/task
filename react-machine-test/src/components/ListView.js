@@ -24,7 +24,7 @@ function ListView() {
   return (
     <div className="list-container">
       <header>
-        <h1>Posts</h1>
+        <h1>view the list</h1>
        
       </header>
       <ul className="post-list">
