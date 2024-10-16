@@ -1,35 +1,50 @@
 .detail-container {
-    padding: 20px;
-    max-width: 800px;
-    margin: auto;
-  }
-  
-  .back-button {
-    padding: 8px 16px;
-    background-color: #2196f3;
-    border: none;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-    margin-bottom: 20px;
-  }
-  
-  .back-button:hover {
-    background-color: #1976d2;
-  }
-  
-  .post-detail {
-    background: #fff;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-  }
-  
-  .post-detail h2 {
-    margin-top: 0;
-  }
-  
-  .post-detail p {
-    line-height: 1.6;
-  }
-  
+  max-width: 800px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  font-family: Arial, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 25px;
+}
+
+.post-detail {
+  margin-bottom: 30px;
+}
+
+.post-detail h2 {
+  color:#4CAF50;;
+  margin-bottom: 15px;
+}
+
+.post-detail p {
+  color: #555555;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.button-group {
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.logout-button {
+
+  padding: 12px 0;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  font-size: 16px;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  color: white;
+}
+
+

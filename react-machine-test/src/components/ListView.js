@@ -19,25 +19,33 @@ function ListView() {
       localStorage.removeItem('isAuthenticated');
       navigate('/')
     };
-  
 
   return (
     <div className="list-container">
       <header>
-        <h1>view the list</h1>
-       
+        <h1>View the List</h1>
       </header>
-      <ul className="post-list">
-        {posts.map((post) => (
-          <li key={post.id} className="post-item">
-            <Link to={`/detail/${post.id}`}>
-              <h3>{post.title}</h3>
-              <p>{post.body}</p>
-            </Link>
-          </li>
-        ))}
-      </ul>
-      <button onClick={handleLogout}>Logout</button>
+      <table className="post-table">
+        <thead>
+          <tr>
+            <th>Title</th>
+            <th>Body</th>
+          </tr>
+        </thead>
+        <tbody>
+          {posts.map((post) => (
+            <tr key={post.id}>
+              <td>
+                <Link to={`/detail/${post.id}`} className="post-link">
+                  {post.title}
+                </Link>
+              </td>
+              <td>{post.body}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+      <button className="logout-button" onClick={handleLogout}>Logout</button>
     </div>
   );
 }

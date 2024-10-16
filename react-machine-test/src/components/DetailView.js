@@ -19,20 +19,32 @@ function DetailView() {
     navigate('/list');
   };
 
+  const handleLogout = () => {
+    localStorage.removeItem('isAuthenticated');
+    navigate('/');
+  };
+
   if (!post) return <div className="detail-container">Loading...</div>;
 
   return (
     <div className="detail-container">
-     
-      <div className="post-detail mb-3">
+      <header>
+        <h1>Post Details</h1>
+      </header>
+      <div className="post-detail">
         <h2>{post.title}</h2>
         <p>{post.body}</p>
         <p><strong>Post ID:</strong> {post.id}</p>
         <p><strong>User ID:</strong> {post.userId}</p>
       </div>
-      <button onClick={handleBack} className="back-button ">
-        &larr; Back to List
-      </button>
+      <div className="button-group">
+        <button onClick={handleBack} className="logout-button" style={{background:"#4CAF50"}}>
+      back
+        </button>
+        <button onClick={handleLogout} className="logout-button">
+          Logout
+        </button>
+      </div>
     </div>
   );
 }
